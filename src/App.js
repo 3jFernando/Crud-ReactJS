@@ -20,15 +20,11 @@ function App() {
 	const [users, setUsers] = useState(usersData);
 
 	// estado del formulario para saber si se esta creando o editando
-	let [stateForm, setStateForm] = useState({
-		user: null
-	});
+	let [stateForm, setStateForm] = useState(null);
 
 	// editar usuarios
 	const updating = (_user) => {
-		setStateForm({
-			user: _user
-		});
+		setStateForm(_user);
 	}
 
 	// eliminar usuarios
